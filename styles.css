@@ -70,7 +70,7 @@ button:active {
 }
 
 button[data-operation] {
-    background: #ff9500;
+    background: #e45f06;
     color: white;
     font-size: 2.5rem; /* Slightly larger for operations */
 }
@@ -91,7 +91,7 @@ button[data-number="0"] {
 
 button[data-operation="clear"],
 button[data-operation="delete"] {
-    background: #a5a5a5;
+    background: #868484;
     color: black;
     font-size: 2rem; /* Adjusted for these buttons */
 }
