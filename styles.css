@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 500px;
+    background: #2d2d2d;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+    background: #3b3b3b;
+    color: white;
+    padding: 30px 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.previous-operand {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5rem; /* Adjusted from 1.8rem */
+    min-height: 30px; /* Adjusted from 36px */
+}
+
+.current-operand {
+    color: white;
+    font-size: 4rem; /* Adjusted from 3.5rem */
+    min-height: 60px; /* Adjusted from 60px */
+    margin-top: 5px; /* Reduced from 10px */
+}
+
+button {
+    width: 90px; /* Increased from 70px */
+    height: 90px; /* Increased from 70px */
+    border-radius: 50%;
+    border: none;
+    font-size: 2.2rem; /* Increased from 1.5rem */
+    margin: 8px; /* Increased from 5px */
+    cursor: pointer;
+    background: #4a4a4a;
+    color: white;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: #5a5a5a;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button[data-operation] {
+    background: #ff9500;
+    color: white;
+    font-size: 2.5rem; /* Slightly larger for operations */
+}
+
+button[data-operation]:hover {
+    background: #ffaa33;
+}
+
+.span-two {
+    width: 196px; /* Increased from 150px */
+    border-radius: 45px; /* Adjusted for new size */
+}
+
+button[data-number="0"] {
+    text-align: left;
+    padding-left: 35px; /* Adjusted for new size */
+}
+
+button[data-operation="clear"],
+button[data-operation="delete"] {
+    background: #a5a5a5;
+    color: black;
+    font-size: 2rem; /* Adjusted for these buttons */
+}
+
+button[data-operation="clear"]:hover,
+button[data-operation="delete"]:hover {
+    background: #b5b5b5;
+}
